@@ -3,11 +3,15 @@
 //     Specialty (Oncologist, pediatrician, etc...)
 //     Address of practice
 
-const createDoctorObject = (name, specialty, addressOfPractice,) => {
+const createDoctorObject = ({"name", specialty, addressOfPractice}) => {
     return {
-        name: name.name,
-        specialty: specialty.specialty,
-        addressOfPractice: addressOfPractice.addressOfPractice,
+        "name" : name,
+       " specialty" : specialty,
+        "addressOfPractice" : addressOfPractice,
       
     }
 }
+
+const newDoctor = createDoctorObject("Rosemary Hunter","Pediatrics","Vanderbilt Monroe Carroll Children's Hospital")
+
+console.log(newDoctor)
